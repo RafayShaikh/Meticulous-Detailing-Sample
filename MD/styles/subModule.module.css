@@ -1,0 +1,144 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1500px;
+  height: 8vh;
+  max-height: 5em;
+  min-height: 1em;
+  padding: 0 2em;
+  margin-bottom: 1.1em;
+}
+.top > svg {
+  color: goldenrod;
+  font-size: medium;
+  opacity: 0;
+  animation: slideRight 0.5s 0.3s ease-in-out forwards;
+}
+.top > h1 {
+  padding-bottom: 1.5em;
+  font-size: 2.2em;
+  border-bottom: 2px solid gold;
+  opacity: 0;
+  animation: slideLeft 0.3s ease-in-out forwards;
+}
+.top > svg:hover {
+  color: gold;
+  cursor: pointer;
+}
+.info {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.infoContainer {
+  width: 98%;
+  display: flex;
+  overflow-x: scroll;
+}
+.infoItem {
+  background-color: rgba(255, 213, 0, 0.055);
+  width: 20%;
+  max-width: 25em;
+  min-width: 20em;
+  margin: 1em 1.5em;
+  border-radius: 10px;
+  padding: 1em 1em;
+  opacity: 0;
+  animation: slideDown 0.5s 0.6s ease-in-out forwards;
+}
+.infoItem > h1 {
+  font-size: 1.5em;
+  border-bottom: 2px solid goldenrod;
+}
+.infoItem > p {
+  font-size: 1.3em;
+}
+.infoItem > p > span {
+  color: goldenrod;
+}
+.infoList {
+  display: flex;
+  flex-wrap: wrap;
+  opacity: 0;
+  animation: slideUp 0.3s 1s ease-in-out forwards;
+}
+.item {
+  background-color: black;
+  border-bottom: 1px solid gold;
+  border-radius: 10px;
+  margin: 0.3em;
+  padding: 0 1em;
+}
+.item > p {
+  font-size: 0.9em;
+  line-height: 0%;
+}
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@media only screen and (max-device-width: 750px) {
+  .top > h1 {
+    font-size: 1.2em;
+  }
+  .infoItem > p {
+    font-size: 0.8em;
+  }
+  .infoItem > h1 {
+    font-size: 0.9em;
+  }
+  .item > p {
+    font-size: 0.8em;
+  }
+  .infoItem {
+    margin: 1.5em 1.5em;
+  }
+}
