@@ -1,9 +1,12 @@
-import { useState } from 'react';
+import { Suspense, useState } from 'react';
 import styles from '../styles/Mid.module.css';
 import Selection from './Selection/Selection';
 import dynamic from 'next/dynamic';
-import Services from './Services';
 const Ceramic = dynamic(() => import('./Ceramic/Ceramic'), {
+  loading: () => <p>...</p>,
+  suspense: true,
+});
+const Services = dynamic(() => import('./Services'), {
   loading: () => <p>...</p>,
 });
 
@@ -27,7 +30,6 @@ function MidSection() {
       {page === 2 && <Ceramic setPage={setPage} />}
       {page === 3 && <Tint setPage={setPage} />}
       {page === 4 && <PPF setPage={setPage} />}
-
       <Services />
     </div>
   );

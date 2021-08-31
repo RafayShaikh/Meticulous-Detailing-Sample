@@ -32,8 +32,8 @@
   min-height: 20m;
   max-width: 20em;
   max-height: 20em;
-  margin: 1em;
-  padding: 0em 1em;
+  margin: 1em 1.8em;
+  padding: 1em;
 }
 
 .service > h1 {
@@ -44,6 +44,7 @@
 .carNames {
   display: flex;
   align-items: center;
+  padding-top: 1em;
 }
 .carNames > img {
   border-radius: 100px;

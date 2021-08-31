@@ -45,6 +45,7 @@
   width: 98%;
   display: flex;
   overflow-x: scroll;
+  white-space: nowrap;
 }
 .infoItem {
   background-color: rgba(255, 213, 0, 0.055);

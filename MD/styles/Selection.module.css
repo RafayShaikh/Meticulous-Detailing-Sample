@@ -17,8 +17,9 @@
 }
 .selectionList {
   display: flex;
+  width: 100vw;
   overflow-x: scroll;
-  width: 100%;
+  white-space: nowrap;
   overflow-y: hidden;
 }
 .selectionItem {
@@ -55,8 +56,4 @@
   text-shadow: 0px 1px black;
 }
 @media only screen and (min-device-width: 800px) {
-  .selectionList {
-    justify-content: space-evenly;
-    align-items: center;
-  }
 }

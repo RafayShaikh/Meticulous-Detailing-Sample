@@ -3,11 +3,11 @@ import styles from '../../styles/Selection.module.css';
 
 function Selection({ setPage }) {
   const [selectionList, setSelectionList] = useState([
-    { id: 1, name: 'Detailing', picture: 'Muscle.jpg' },
-    { id: 2, name: 'Ceramic Coating', picture: 'rv.jpg' },
-    { id: 3, name: 'Tinting', picture: '/classic.jpg' },
-    { id: 4, name: 'PPF', picture: '/classic.jpg' },
-    { id: 5, name: 'Other', picture: '/classic.jpg' },
+    { id: 1, name: 'Detailing', picture: '/detailing.jpg' },
+    { id: 2, name: 'Ceramic Coating', picture: '/ceramic.jpg' },
+    { id: 3, name: 'Tinting', picture: '/tinting.jpg' },
+    { id: 4, name: 'PPF', picture: '/ppf.jpg' },
+    { id: 5, name: 'More', picture: '/Muscle.jpg' },
   ]);
   return (
     <div className={styles.selectionContainer}>
@@ -24,7 +24,7 @@ function Selection({ setPage }) {
             onClick={() => setPage(item.id)}
             className={styles.selectionItem}
           >
-            <img className={styles.thumbnail} src={item.picture} alt='' />
+            <img className={styles.thumbnail} src={item.picture} alt='item' />
             <h1>{item.name}</h1>
           </div>
         ))}
