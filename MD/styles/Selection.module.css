@@ -5,13 +5,23 @@
   align-items: center;
   flex-direction: column;
 }
+.arrows {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.arrows > svg {
+  color: goldenrod;
+  height: 3em;
+}
 .selectionTop {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: larger;
   text-align: center;
-  margin-bottom: 5em;
+  margin-bottom: 2em;
   width: 100%;
   border-bottom: solid 2px goldenrod;
 }
@@ -25,12 +35,12 @@
 .selectionItem {
   display: flex;
   flex-direction: column;
-  height: 25em;
-  width: 25em;
-  max-width: 300px;
-  max-height: 300px;
-  min-width: 250px;
-  min-height: 250px;
+  height: 20em;
+  width: 20em;
+  max-width: 20em;
+  max-height: 20em;
+  min-width: 20em;
+  min-height: 20em;
   background-color: black;
   margin: 1.5em;
   box-shadow: 0px 5px 12px -5px var(--primary);
@@ -39,7 +49,7 @@
 }
 .thumbnail {
   object-fit: cover;
-  height: 100%;
+  height: 80%;
   width: 100%;
 }
 .selectionItem:hover {
