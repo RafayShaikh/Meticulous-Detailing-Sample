@@ -1,12 +1,13 @@
 .logos {
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
-  width: 100vw;
+  width: 50%;
+  min-width: 30em;
 }
 .logos > p {
-  width: 40%;
+  width: 70%;
 }
 .logos > h1 {
   border-bottom: 1px solid goldenrod;
@@ -27,6 +28,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 12em;
+  height: 8em;
   width: 100%;
 }

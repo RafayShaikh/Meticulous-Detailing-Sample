@@ -1,5 +1,4 @@
 .container {
-  padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,6 +6,42 @@
   background-color: var(--secondary);
   color: var(--font-color);
   overflow-x: hidden;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.address {
+  min-width: 30em;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.address > p {
+  font-size: 1em;
+  margin: 1em 0em;
+}
+.container > h1 {
+  border-bottom: 1px solid goldenrod;
+}
+.address > div > svg {
+  width: 4em;
+  height: 4em;
+}
+.address > div > svg:hover {
+  border-bottom: 5px solid goldenrod;
+  cursor: pointer;
+}
+.address > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8em;
+  width: 100%;
 }
 .bottom {
   display: flex;

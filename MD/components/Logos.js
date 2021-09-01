@@ -8,12 +8,6 @@ function Logos() {
   };
   return (
     <div className={styles.logos}>
-      <h1>Follow Us On Social Media</h1>
-      <p>
-        Stay updated with new offers and services with Corpus Christi's best
-        Detailing, Paint Protective, and Tinting Shop. We post realworld
-        examples of our Meticulous work on these platforms.
-      </p>
       <div>
         <svg
           onClick={() =>
@@ -117,6 +111,11 @@ function Logos() {
           />
         </svg>
       </div>
+      <p>
+        Stay updated with new offers and services with Corpus Christi's best
+        Detailing, Paint Protective, and Tinting Shop. We post realworld
+        examples of our Meticulous work on these platforms.
+      </p>
     </div>
   );
 }

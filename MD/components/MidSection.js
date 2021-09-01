@@ -3,23 +3,32 @@ import styles from '../styles/Mid.module.css';
 import Selection from './Selection/Selection';
 import dynamic from 'next/dynamic';
 const Ceramic = dynamic(() => import('./Ceramic/Ceramic'), {
-  loading: () => <p>...</p>,
-  suspense: true,
+  loading: () => (
+    <img style={{ width: '50%' }} src='logoOrignal.jpg' alt='logo' />
+  ),
 });
 const Services = dynamic(() => import('./Services'), {
-  loading: () => <p>...</p>,
+  loading: () => (
+    <img style={{ width: '50%' }} src='logoOrignal.jpg' alt='logo' />
+  ),
 });
 
 const Tint = dynamic(() => import('./Tint/Tint'), {
-  loading: () => <p>...</p>,
+  loading: () => (
+    <img style={{ width: '50%' }} src='logoOrignal.jpg' alt='logo' />
+  ),
 });
 
 const Detail = dynamic(() => import('./Detail/Detail'), {
-  loading: () => <p>...</p>,
+  loading: () => (
+    <img style={{ width: '50%' }} src='logoOrignal.jpg' alt='logo' />
+  ),
 });
 
 const PPF = dynamic(() => import('./PPF/PPF'), {
-  loading: () => <p>...</p>,
+  loading: () => (
+    <img style={{ width: '50%' }} src='logoOrignal.jpg' alt='logo' />
+  ),
 });
 function MidSection() {
   const [page, setPage] = useState(0);
