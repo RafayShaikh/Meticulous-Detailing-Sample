@@ -19,7 +19,7 @@ function BottomSection() {
           }
           className={styles.address}
         >
-          <div>
+          <div className={styles.logos}>
             <svg
               height='2500'
               viewBox='14.32 4.87961494 37.85626587 52.79038506'
