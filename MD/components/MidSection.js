@@ -2,12 +2,8 @@ import { Suspense, useState } from 'react';
 import styles from '../styles/Mid.module.css';
 import Selection from './Selection/Selection';
 import dynamic from 'next/dynamic';
+import CallAction from './CallAction';
 const Ceramic = dynamic(() => import('./Ceramic/Ceramic'), {
-  loading: () => (
-    <img style={{ width: '50%' }} src='logoOrignal.jpg' alt='logo' />
-  ),
-});
-const Services = dynamic(() => import('./Services'), {
   loading: () => (
     <img style={{ width: '50%' }} src='logoOrignal.jpg' alt='logo' />
   ),
@@ -39,7 +35,7 @@ function MidSection() {
       {page === 2 && <Ceramic setPage={setPage} />}
       {page === 3 && <Tint setPage={setPage} />}
       {page === 4 && <PPF setPage={setPage} />}
-      <Services />
+      <CallAction />
     </div>
   );
 }

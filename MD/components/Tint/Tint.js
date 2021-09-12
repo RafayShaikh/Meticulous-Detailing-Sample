@@ -1,79 +1,47 @@
 import { useState } from 'react';
 import styles from '../../styles/subModule.module.css';
+import Services from './TintingServices';
 
-function Tint({ setPage }) {
+function Tinting({ setPage }) {
   const [packages, setPackages] = useState([
     {
-      name: 'Basic',
-      pricing: 65,
+      name: 'Color Stable',
       info: [
-        'Wash',
-        'Dry',
-        'Door Jams Cleaned',
-        'Wheels Cleaned',
-        'Tires Dressed',
-        'Vaccum',
-        'Windows',
-        'Interior Trim Dusted',
+        'Safety And Color Stability Like Never Before',
+        'Protect yourself from 99% harmful cancer causing UV rays & achieve the privacy you desire with PRIME CS ™, the most color stable window tint film around.',
+        'The Skin Cancer Foundation recommends PRIME CS ™ Window Tint as an effective UV protectant.',
+        'Reduces Glare',
+        'Keeps You Comfortable',
+        'UV Ray Protection',
+        'Crystal Clear Signal',
+        'Looks Good',
       ],
     },
     {
-      name: 'Premium',
-      pricing: 110,
+      name: 'XR Ceramic 88%',
       info: [
-        'Wash',
-        'Dry',
-        'Door Jams Cleaned',
-        'Wheels Cleaned',
-        'Tires Dressed',
-        'Spray Wax',
-        'Vaccum',
-        'Windows',
-        'Interior Cleaned',
-        'Interior Dressed',
+        'Extreme Performance, Exceptional Quality',
+        'Utilizing a nano-ceramic construction, PRIME XR ™ maintains the same flawless appearance and clarity throughout the years. Blocking up to 88% infrared heat rejection, PRIME XR will provide you with the level of performance you expect from a top-of-the line film without breaking the bank.',
+        'The Skin Cancer Foundation recommends PRIME XR ™ Window Tint as an effective UV protectant.',
+        'Ceramic Particle Technology',
+        'Superior Heat Rejection',
+        'UV Ray Protection',
+        'Greater Clarity',
+        'Crystal Clear Signal',
       ],
     },
     {
-      name: 'Ultimate',
-      pricing: 175,
+      name: 'XR PLUS CERAMIC 98% IR',
       info: [
-        'Wash',
-        'Dry',
-        'Door Jams Cleaned',
-        'Wheels Cleaned',
-        'Tires Dressed',
-        'Hand Wax',
-        'Vaccum',
-        'Windows',
-        'Interior Cleaned',
-        'Interior Dressed',
-        'Seats Cleaned',
-        'Carpet Shampooing',
+        'The Pinnacle Of High Performance Tint. Period.',
+        'Offering 98% infrared heat rejection thanks to multi-layer nanoparticle technology, PRIME XR PLUS ™ combines a cool look with extreme performance. Let PRIME XR PLUS keep you comfortable and protected no matter the weather.',
+        'The Skin Cancer Foundation recommends PRIME XR PLUS ™ Window Tint as an effective UV protectant.',
+        'Ceramic Particle Technology',
+        'Superior Heat Rejection',
+        'UV Ray Protection',
+        'Greater Clarity',
+        'Crystal Clear Signal',
       ],
-    },
-    {
-      name: 'Meticulous',
-      pricing: 275,
-      info: [
-        'Wash',
-        'Dry',
-        'Door Jams Cleaned',
-        'Wheels Cleaned',
-        'Tires Dressed',
-        'Clay Bar',
-        'One Step Polish',
-        'Vaccum',
-        'Windows',
-        'Interior Cleaned',
-        'Interior Dressed',
-        'Seats Cleaned',
-        'Carpet Shampooing',
-      ],
-    },
-    {
-      name: 'Customized',
-      pricing: 'Contact',
-      info: ['Mix and Match Services', 'Addtional Services'],
     },
   ]);
 
@@ -90,22 +58,26 @@ function Tint({ setPage }) {
           stroke='currentColor'
         >
           <path
-            strokeLinecap='round'
-            strokeLinejoin='round'
-            strokeWidth={2}
+            stroke-linecap='round'
+            stroke-linejoin='round'
+            stroke-width='2'
             d='M6 18L18 6M6 6l12 12'
           />
         </svg>
       </div>
       <div className={styles.info}>
+        <img
+          src='/XpelLogos/XPEL.png'
+          className={styles.logo}
+          alt='Xpel Logo'
+        />
+        <h1 className={styles.logoDescription}>
+          We Are Corpus Christi's Authorized Dealer.
+        </h1>
         <div className={styles.infoContainer}>
           {packages.map((item) => (
             <div className={styles.infoItem}>
               <h1>{item.name}</h1>
-              <p>
-                <span>$ </span>
-                {item.pricing}
-              </p>
               <div className={styles.infoList}>
                 {item.info.map((detail) => (
                   <div className={styles.item}>
@@ -117,8 +89,24 @@ function Tint({ setPage }) {
           ))}
         </div>
       </div>
+      <Services />
+      <p className={styles.note}>
+        CLASSICSS AND EXOTICS CUSTOM QUOTES MUST BE SEEN IN PERSON TO GIVE
+        ACCURATE QUOTE
+      </p>
+      <p className={styles.note}>
+        *PRICES OF PACKAGE ARE ALWAYS SUBJECT TO CHANGE FROM LISTING. VEHICLES
+        WILL BE EVALUATED BASED OFF CONDITION AND SIZE BEFORE ANY WORK IS DONE
+        OR STARTED. PRICE WILL BE APPROVED BY CLIENT FIRST.
+      </p>
+      <p className={styles.note}>
+        *XPEL TINT IS *LIFETIME WARRANTY* AND TRANSFERRABLE.
+      </p>
+      <p className={styles.note}>
+        *LIFETIME WARRANTY DOES END WHEN THE LIFE OF THE GLASS MEETS ITS END.
+      </p>
     </div>
   );
 }
 
-export default Tint;
+export default Tinting;

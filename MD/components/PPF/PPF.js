@@ -1,86 +1,48 @@
 import { useState } from 'react';
 import styles from '../../styles/subModule.module.css';
+import Services from './PPFServices';
 
 function PPF({ setPage }) {
   const [packages, setPackages] = useState([
     {
-      name: 'Basic',
-      pricing: 65,
+      name: 'Partial Front',
+      info: ['Partial Hood', 'Partial Fender', 'Full Front Bumper', 'Mirrors'],
+    },
+    {
+      name: 'Full Front',
+      info: ['Full Hood', 'Full Fender', 'Full Front Bumper', 'Mirrors'],
+    },
+    {
+      name: 'Track Pack',
       info: [
-        'Wash',
-        'Dry',
-        'Door Jams Cleaned',
-        'Wheels Cleaned',
-        'Tires Dressed',
-        'Vaccum',
-        'Windows',
-        'Interior Trim Dusted',
+        'Full Hood',
+        'Full Fender',
+        'Full Front Bumper',
+        'Mirrors',
+        'A-Pillars',
+        'Partial Roof',
+        'Rocker Panels',
       ],
     },
     {
-      name: 'Premium',
-      pricing: 110,
+      name: 'Complete Wrap',
       info: [
-        'Wash',
-        'Dry',
-        'Door Jams Cleaned',
-        'Wheels Cleaned',
-        'Tires Dressed',
-        'Spray Wax',
-        'Vaccum',
-        'Windows',
-        'Interior Cleaned',
-        'Interior Dressed',
+        'Total Coverage',
+        'All Painted Surfaces',
+        'Hood',
+        'Bumper',
+        'Fenders',
+        'Pillars',
+        'Spoilers',
+        'Rocker Panel',
       ],
-    },
-    {
-      name: 'Ultimate',
-      pricing: 175,
-      info: [
-        'Wash',
-        'Dry',
-        'Door Jams Cleaned',
-        'Wheels Cleaned',
-        'Tires Dressed',
-        'Hand Wax',
-        'Vaccum',
-        'Windows',
-        'Interior Cleaned',
-        'Interior Dressed',
-        'Seats Cleaned',
-        'Carpet Shampooing',
-      ],
-    },
-    {
-      name: 'Meticulous',
-      pricing: 275,
-      info: [
-        'Wash',
-        'Dry',
-        'Door Jams Cleaned',
-        'Wheels Cleaned',
-        'Tires Dressed',
-        'Clay Bar',
-        'One Step Polish',
-        'Vaccum',
-        'Windows',
-        'Interior Cleaned',
-        'Interior Dressed',
-        'Seats Cleaned',
-        'Carpet Shampooing',
-      ],
-    },
-    {
-      name: 'Customized',
-      pricing: 'Contact',
-      info: ['Mix and Match Services', 'Addtional Services'],
     },
   ]);
 
   return (
     <div className={styles.container}>
       <div className={styles.top}>
-        <h1>PPF Packages</h1>
+        <h1>Tinting Packages</h1>
         <svg
           onClick={() => setPage(0)}
           xmlns='http://www.w3.org/2000/svg'
@@ -98,14 +60,30 @@ function PPF({ setPage }) {
         </svg>
       </div>
       <div className={styles.info}>
+        <img
+          src='/XpelLogos/XPEL.png'
+          className={styles.logo}
+          alt='Xpel Logo'
+        />
+        <div className={styles.ppfLogos}>
+          <img
+            src='/XpelLogos/UPL.jpg'
+            className={styles.logo}
+            alt='Xpel UPL PPF'
+          />
+          <img
+            src='/XpelLogos/PPF.png'
+            className={styles.logo}
+            alt='Xpel Stealth PPF'
+          />
+        </div>
+        <h1 className={styles.logoDescription}>
+          We Are Corpus Christi's Authorized Dealer.
+        </h1>
         <div className={styles.infoContainer}>
           {packages.map((item) => (
             <div className={styles.infoItem}>
               <h1>{item.name}</h1>
-              <p>
-                <span>$ </span>
-                {item.pricing}
-              </p>
               <div className={styles.infoList}>
                 {item.info.map((detail) => (
                   <div className={styles.item}>
@@ -117,6 +95,22 @@ function PPF({ setPage }) {
           ))}
         </div>
       </div>
+      <Services />
+      <p className={styles.note}>
+        CLASSICSS AND EXOTICS CUSTOM QUOTES MUST BE SEEN IN PERSON TO GIVE
+        ACCURATE QUOTE
+      </p>
+      <p className={styles.note}>
+        *PRICES OF PACKAGE ARE ALWAYS SUBJECT TO CHANGE FROM LISTING. VEHICLES
+        WILL BE EVALUATED BASED OFF CONDITION AND SIZE BEFORE ANY WORK IS DONE
+        OR STARTED. PRICE WILL BE APPROVED BY CLIENT FIRST.
+      </p>
+      <p className={styles.note}>
+        *XPEL TINT IS *LIFETIME WARRANTY* AND TRANSFERRABLE.
+      </p>
+      <p className={styles.note}>
+        *LIFETIME WARRANTY DOES END WHEN THE LIFE OF THE GLASS MEETS ITS END.
+      </p>
     </div>
   );
 }

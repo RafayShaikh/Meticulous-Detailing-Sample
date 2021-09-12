@@ -4,14 +4,14 @@
   align-items: center;
   flex-direction: column;
   overflow-x: hidden;
-  width: 100vw;
+  width: 100%;
 }
 
 .top {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  max-width: 1500px;
+  max-width: 1600px;
   height: 8vh;
   max-height: 5em;
   min-height: 1em;
@@ -40,11 +40,14 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .infoContainer {
-  width: 98%;
+  width: 100%;
   display: flex;
-  overflow-x: scroll;
+  justify-content: center;
+  flex-wrap: wrap;
   white-space: nowrap;
 }
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -59,12 +62,12 @@
 }
 .infoItem {
   background-color: rgba(255, 213, 0, 0.055);
-  width: 20%;
-  max-width: 25em;
+  width: 30%;
+  max-width: 40em;
   min-width: 20em;
-  margin: 1em 1.5em;
+  margin: 1em 1em;
   border-radius: 10px;
-  padding: 1em 1em;
+  padding: 0.8em 1em;
   opacity: 0;
   animation: slideDown 0.5s 0.6s ease-in-out forwards;
 }
@@ -72,12 +75,7 @@
   font-size: 1.5em;
   border-bottom: 2px solid goldenrod;
 }
-.infoItem > p {
-  font-size: 1.3em;
-}
-.infoItem > p > span {
-  color: goldenrod;
-}
+
 .infoList {
   display: flex;
   flex-wrap: wrap;
@@ -86,14 +84,37 @@
 }
 .item {
   background-color: black;
-  border-bottom: 1px solid gold;
   border-radius: 10px;
   margin: 0.3em;
   padding: 0 1em;
 }
 .item > p {
-  font-size: 0.9em;
-  line-height: 0%;
+  white-space: normal;
+  font-size: 1.2em;
+}
+.note {
+  color: var(--primary);
+  font-size: 1.5em;
+  width: 80%;
+}
+.logo {
+  width: 60%;
+  object-fit: contain;
+  padding: 1em 0.5em;
+  margin: 1em 0.5em;
+  opacity: 0;
+  animation: slideLeft 0.5s ease-out forwards;
+}
+.logoDescription {
+  color: var(--primary);
+  font-weight: 700;
+  margin-bottom: 2em;
+}
+.ppfLogos {
+  border-top: 1px solid var(--primary);
+  display: flex;
+  justify-content: space-evenly;
+  width: 40%;
 }
 @keyframes slideRight {
   from {
@@ -151,5 +172,11 @@
   }
   .infoItem {
     margin: 1.5em 1.5em;
+  }
+  .logo {
+    width: 100%;
+  }
+  .logoDescription {
+    font-size: 1em;
   }
 }

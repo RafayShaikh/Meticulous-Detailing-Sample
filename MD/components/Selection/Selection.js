@@ -6,8 +6,8 @@ function Selection({ setPage }) {
     { id: 1, name: 'Detailing', picture: '/detailing.jpg' },
     { id: 2, name: 'Ceramic Coating', picture: '/ceramic.jpg' },
     { id: 3, name: 'Tinting', picture: '/tinting.jpg' },
-    { id: 4, name: 'PPF', picture: '/ppf.jpg' },
-    { id: 5, name: 'More', picture: '/Muscle.jpg' },
+    { id: 4, name: 'Paint Protection Film', picture: '/ppf.jpg' },
+    { id: 5, name: 'Paint Correction', picture: '/Muscle.jpg' },
   ]);
   return (
     <div className={styles.selectionContainer}>
@@ -16,36 +16,6 @@ function Selection({ setPage }) {
           We Offer Variety of Sevices, so your ride can standout in the crowd.
         </p>
         <h1>Explore A Catergory</h1>
-      </div>
-      <div className={styles.arrows}>
-        <svg
-          xmlns='http://www.w3.org/2000/svg'
-          className='h-6 w-6'
-          fill='none'
-          viewBox='0 0 24 24'
-          stroke='currentColor'
-        >
-          <path
-            strokeLinecap='round'
-            strokeLinejoin='round'
-            strokeWidth={2}
-            d='M11 19l-7-7 7-7m8 14l-7-7 7-7'
-          />
-        </svg>
-        <svg
-          xmlns='http://www.w3.org/2000/svg'
-          className='h-6 w-6'
-          fill='none'
-          viewBox='0 0 24 24'
-          stroke='currentColor'
-        >
-          <path
-            strokeLinecap='round'
-            strokeLinejoin='round'
-            strokeWidth='2'
-            d='M13 5l7 7-7 7M5 5l7 7-7 7'
-          />
-        </svg>
       </div>
       <div className={styles.selectionList}>
         {selectionList.map((item) => (

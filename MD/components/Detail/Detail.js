@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import styles from '../../styles/subModule.module.css';
+import Services from './DetailingServices';
 
 function Detail({ setPage }) {
   const [packages, setPackages] = useState([
     {
       name: 'Basic',
-      pricing: 65,
       info: [
         'Wash',
         'Dry',
@@ -19,7 +19,6 @@ function Detail({ setPage }) {
     },
     {
       name: 'Premium',
-      pricing: 110,
       info: [
         'Wash',
         'Dry',
@@ -35,7 +34,6 @@ function Detail({ setPage }) {
     },
     {
       name: 'Ultimate',
-      pricing: 175,
       info: [
         'Wash',
         'Dry',
@@ -53,7 +51,6 @@ function Detail({ setPage }) {
     },
     {
       name: 'Meticulous',
-      pricing: 275,
       info: [
         'Wash',
         'Dry',
@@ -102,10 +99,6 @@ function Detail({ setPage }) {
           {packages.map((item) => (
             <div className={styles.infoItem}>
               <h1>{item.name}</h1>
-              <p>
-                <span>$ </span>
-                {item.pricing}
-              </p>
               <div className={styles.infoList}>
                 {item.info.map((detail) => (
                   <div className={styles.item}>
@@ -117,6 +110,12 @@ function Detail({ setPage }) {
           ))}
         </div>
       </div>
+      <Services />
+      <p className={styles.note}>
+        *PRICES OF PACKAGE ARE ALWAYS SUBJECT TO CHANGE FROM LISTING. VEHICLES
+        WILL BE EVALUATED BASED OFF CONDITION AND SIZE BEFORE ANY WORK IS DONE
+        OR STARTED. PRICE WILL BE APPROVED BY CLIENT FIRST.
+      </p>
     </div>
   );
 }
