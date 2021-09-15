@@ -114,9 +114,6 @@ function DetailingServices() {
   ]);
   return (
     <div className={styles.services}>
-      <div className={styles.servicesTop}>
-        <h1>Detailing Services Available For</h1>
-      </div>
       <div className={styles.servicesList}>
         {vehicles.map((vehicle) => (
           <div className={styles.service}>

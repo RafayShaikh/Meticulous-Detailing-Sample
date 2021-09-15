@@ -16,7 +16,7 @@
 }
 .servicesTop > h1 {
   margin-bottom: 1em;
-  border-bottom: 1px solid goldenrod;
+  border-bottom: 1px solid var(--primary);
 }
 .servicesList {
   display: flex;
@@ -26,12 +26,10 @@
   flex-wrap: wrap;
 }
 .service {
-  width: 25%;
-  height: 20%;
-  min-width: 22em;
-  min-height: 20em;
-  max-width: 40em;
-  max-height: 35em;
+  width: 22%;
+  min-width: 15em;
+  max-width: 25em;
+  height: auto;
   margin: 1em 1em;
   padding: 1em;
 }
@@ -39,7 +37,7 @@
 .service > h1 {
   text-align: center;
   font-size: 1.5em;
-  border-bottom: 1px solid goldenrod;
+  border-bottom: 1px solid var(--primary);
 }
 .carNames {
   display: flex;
@@ -49,8 +47,8 @@
 .carNames > img {
   border-radius: 100px;
   object-fit: cover;
-  height: 15em;
-  width: 15em;
+  height: 12em;
+  width: 12em;
 }
 .itemName {
   display: flex;
@@ -58,12 +56,12 @@
 }
 .itemName > p {
   display: flex;
-  font-size: 1em;
+  font-size: 0.7em;
   height: min-content;
   padding: 1em;
   margin: 0em 0.5em;
   background-color: black;
-  border-bottom: 1px solid goldenrod;
+  border-bottom: 1px solid var(--primary);
   border-radius: 100px;
 }
 
@@ -91,7 +89,7 @@
 .package > h1 {
   text-transform: uppercase;
   line-height: 0;
-  font-size: 1.1em;
+  font-size: 0.8em;
 }
 .package > P {
   color: var(--primary);

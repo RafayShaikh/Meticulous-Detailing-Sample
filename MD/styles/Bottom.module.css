@@ -26,14 +26,14 @@
   margin: 1em 0em;
 }
 .container > h1 {
-  border-bottom: 1px solid goldenrod;
+  border-bottom: 1px solid var(--primary);
 }
 .address > div > svg {
   width: 4em;
   height: 4em;
 }
 .address > div > svg:hover {
-  border-bottom: 5px solid goldenrod;
+  border-bottom: 5px solid var(--primary);
   cursor: pointer;
 }
 .address > div {
@@ -51,14 +51,14 @@
   width: 100%;
 }
 .logos > svg {
-  height: 4em;
-  width: 4em;
+  height: 3em;
+  width: 3em;
   margin: 0em 2em;
   padding-bottom: 1em;
   transition: all 0.2s;
 }
 .logos > svg:hover {
-  border-bottom: 5px solid goldenrod;
+  border-bottom: 5px solid var(--primary);
   cursor: pointer;
 }
 @keyframes slideUp {

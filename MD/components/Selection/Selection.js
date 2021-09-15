@@ -4,9 +4,9 @@ import styles from '../../styles/Selection.module.css';
 function Selection({ setPage }) {
   const [selectionList, setSelectionList] = useState([
     { id: 1, name: 'Detailing', picture: '/detailing.jpg' },
-    { id: 2, name: 'Ceramic Coating', picture: '/ceramic.jpg' },
     { id: 3, name: 'Tinting', picture: '/tinting.jpg' },
     { id: 4, name: 'Paint Protection Film', picture: '/ppf.jpg' },
+    { id: 2, name: 'Ceramic Coating', picture: '/ceramic.jpg' },
     { id: 5, name: 'Paint Correction', picture: '/Muscle.jpg' },
   ]);
   return (

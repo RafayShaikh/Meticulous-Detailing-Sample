@@ -18,7 +18,7 @@ function Tinting({ setPage }) {
       ],
     },
     {
-      name: 'XR Ceramic 88%',
+      name: 'XR Ceramic',
       info: [
         'Extreme Performance, Exceptional Quality',
         'Utilizing a nano-ceramic construction, PRIME XR ™ maintains the same flawless appearance and clarity throughout the years. Blocking up to 88% infrared heat rejection, PRIME XR will provide you with the level of performance you expect from a top-of-the line film without breaking the bank.',
@@ -31,7 +31,7 @@ function Tinting({ setPage }) {
       ],
     },
     {
-      name: 'XR PLUS CERAMIC 98% IR',
+      name: 'XR PLUS CERAMIC',
       info: [
         'The Pinnacle Of High Performance Tint. Period.',
         'Offering 98% infrared heat rejection thanks to multi-layer nanoparticle technology, PRIME XR PLUS ™ combines a cool look with extreme performance. Let PRIME XR PLUS keep you comfortable and protected no matter the weather.',
