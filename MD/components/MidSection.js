@@ -26,6 +26,14 @@ const PPF = dynamic(() => import('./PPF/PPF'), {
     <img style={{ width: '50%' }} src='logoOrignal.jpg' alt='logo' />
   ),
 });
+const PaintCorrection = dynamic(
+  () => import('./PaintCorrection/PaintCorrection'),
+  {
+    loading: () => (
+      <img style={{ width: '50%' }} src='logoOrignal.jpg' alt='logo' />
+    ),
+  }
+);
 function MidSection() {
   const [page, setPage] = useState(0);
   return (
@@ -35,6 +43,8 @@ function MidSection() {
       {page === 2 && <Ceramic setPage={setPage} />}
       {page === 3 && <Tint setPage={setPage} />}
       {page === 4 && <PPF setPage={setPage} />}
+      {page === 5 && <PaintCorrection setPage={setPage} />}
+
       <CallAction />
     </div>
   );
