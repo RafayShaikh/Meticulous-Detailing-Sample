@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import styles from '../../styles/subModule.module.css';
-import Services from './CeramicServices';
+import Services from './PaintCorrectionServices';
 
-function Ceramic({ setPage }) {
+function PaintCorrection({ setPage }) {
   const [packages, setPackages] = useState([
     {
       name: 'Basic',
@@ -77,7 +77,7 @@ function Ceramic({ setPage }) {
   return (
     <div className={styles.container}>
       <div className={styles.top}>
-        <h1>Ceramic Coating Packages</h1>
+        <h1>Paint Correction Packages</h1>
         <svg
           onClick={() => setPage(0)}
           xmlns='http://www.w3.org/2000/svg'
@@ -120,4 +120,4 @@ function Ceramic({ setPage }) {
   );
 }
 
-export default Ceramic;
+export default PaintCorrection;

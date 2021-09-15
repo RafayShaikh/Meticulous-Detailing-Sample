@@ -18,11 +18,11 @@
 .image {
   position: absolute;
   top: 0;
-  width: 25%;
+  width: 30%;
   min-width: 16em;
   border-radius: 10px;
   opacity: 0;
-  animation: loading1 1s 0.3s ease-in-out forwards;
+  animation: loading1 5s 0.8s ease-in-out forwards;
 }
 .title {
   position: absolute;
@@ -31,7 +31,7 @@
   margin-bottom: 5em;
   left: 0;
   color: var(--primary);
-  max-width: 40em;
+  max-width: 35em;
   background-color: rgba(0, 0, 0, 0.123);
   padding: 2px;
   border-radius: 10px;
@@ -40,19 +40,20 @@
 }
 .title > h1 {
   font-size: 0.9em;
-  text-shadow: 0px 1px black;
+  text-shadow: 1px 2px black;
+  font-weight: 800;
 }
 .title > p {
   font-size: 0.3em;
-  text-shadow: 0px 1px black;
+  text-shadow: 1px 2px black;
 }
 @media only screen and (min-device-width: 800px) {
   .title > h1 {
-    font-size: 3em;
+    font-size: 2.2em;
   }
 
   .title > p {
-    font-size: 1.4em;
+    font-size: 1em;
   }
 }
 

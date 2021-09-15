@@ -42,7 +42,7 @@ function PPF({ setPage }) {
   return (
     <div className={styles.container}>
       <div className={styles.top}>
-        <h1>Tinting Packages</h1>
+        <h1>Paint Protection Film Packages</h1>
         <svg
           onClick={() => setPage(0)}
           xmlns='http://www.w3.org/2000/svg'

@@ -13,7 +13,7 @@ function Selection({ setPage }) {
     <div className={styles.selectionContainer}>
       <div className={styles.selectionTop}>
         <p>
-          We Offer Variety of Sevices, so your ride can standout in the crowd.
+          We offer variety of sevices, so your ride can standout in the crowd.
         </p>
         <h1>Explore A Catergory</h1>
       </div>
