@@ -16,6 +16,7 @@ const BottomSection = dynamic(() => import('../components/BottomSection'), {
 });
 
 export default function Home() {
+  const text = 'Welcome to Meticulous Detailing';
   return (
     <div className={styles.container}>
       <Head>
@@ -29,7 +30,7 @@ export default function Home() {
           content='Meticulous Detailing is the best deatiling shop in Corpus Christi, Texas. Our expertise include full car detailing, paint protective films, tinting, paint correction, car cleaning, and more'
         />
       </Head>
-      <TopSection />
+      <TopSection text={text} />
       <MidSection />
       <BottomSection />
     </div>
