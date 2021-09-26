@@ -9,9 +9,10 @@ const Ceramic = dynamic(() => import('../components/Ceramic/Ceramic'), {
 });
 
 const ceramiccoating = () => {
+  const text = 'Ceramic Coating';
   return (
     <div className={styles.container}>
-      <TopSection />
+      <TopSection text={text} />
       <Ceramic />
     </div>
   );

@@ -5,9 +5,11 @@ import styles from '../styles/Home.module.css';
 import PaintCorrection from '../components/PaintCorrection/PaintCorrection';
 
 const paintcorrection = () => {
+  const text = 'Paint Correction';
+
   return (
     <div className={styles.container}>
-      <TopSection />
+      <TopSection text={text} />
       <PaintCorrection />
     </div>
   );

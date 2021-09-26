@@ -1,7 +1,7 @@
 import styles from '../styles/Top.module.css';
 import Header from './Header/Header';
 
-function TopSection() {
+function TopSection({ text }) {
   return (
     <div className={styles.container}>
       <Header />
@@ -15,7 +15,7 @@ function TopSection() {
       ></video>*/}
 
       <div className={styles.title}>
-        <h1>Lorem ipsum, dolor sit amet.</h1>
+        <h1>{text}</h1>
         <p>
           Totam pariatur amet esse deleniti odit natus aperiam minus.
           Perferendis veritatis, rem magnam dolorum sunt id expedita officia

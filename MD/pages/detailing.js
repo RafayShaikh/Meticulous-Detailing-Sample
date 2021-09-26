@@ -9,9 +9,10 @@ const Detail = dynamic(() => import('../components/Detail/Detail'), {
 });
 
 const detailing = () => {
+  const text = 'Detailing'
   return (
     <div className={styles.container}>
-      <TopSection />
+      <TopSection text={text} />
       <Detail />
     </div>
   );

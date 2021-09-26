@@ -9,9 +9,11 @@ const PPF = dynamic(() => import('../components/PPF/PPF'), {
 });
 
 const ppf = () => {
+  const text = 'Paint Protection Film';
+
   return (
     <div className={styles.container}>
-      <TopSection />
+      <TopSection text={text} />
       <PPF />
     </div>
   );

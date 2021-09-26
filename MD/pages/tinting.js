@@ -9,9 +9,10 @@ const Tint = dynamic(() => import('../components/Tint/Tint'), {
 });
 
 const tinting = () => {
+  const text = 'Tinting';
   return (
     <div className={styles.container}>
-      <TopSection />
+      <TopSection text={text} />
       <Tint />
     </div>
   );
