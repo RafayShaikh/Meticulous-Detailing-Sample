@@ -1,20 +1,18 @@
 import styles from '../styles/Top.module.css';
+import Header from './Header/Header';
 
 function TopSection() {
   return (
     <div className={styles.container}>
-      <video
+      <Header />
+      <img className={styles.video} src='/ppf.jpg' alt='Meticulous Detailing' />
+      {/*<video
         className={styles.video}
         autoPlay
         loop
         muted
         src='/TitleVideo.mp4'
-      ></video>
-      <img
-        className={styles.image}
-        src='/logoOrignal.jpg'
-        alt='Meticulous Detailing'
-      />
+      ></video>*/}
 
       <div className={styles.title}>
         <h1>Lorem ipsum, dolor sit amet.</h1>

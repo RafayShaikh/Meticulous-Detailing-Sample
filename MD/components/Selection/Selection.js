@@ -1,13 +1,30 @@
 import { useState } from 'react';
 import styles from '../../styles/Selection.module.css';
+import { useRouter } from 'next/router';
 
-function Selection({ setPage }) {
+function Selection() {
+  const router = useRouter();
   const [selectionList, setSelectionList] = useState([
-    { id: 1, name: 'Detailing', picture: '/detailing.jpg' },
-    { id: 3, name: 'Tinting', picture: '/tinting.jpg' },
-    { id: 4, name: 'Paint Protection Film', picture: '/ppf.jpg' },
-    { id: 2, name: 'Ceramic Coating', picture: '/ceramic.jpg' },
-    { id: 5, name: 'Paint Correction', picture: '/Muscle.jpg' },
+    { id: 1, name: 'Detailing', picture: '/detailing.jpg', url: '/detailing' },
+    { id: 3, name: 'Tinting', picture: '/tinting.jpg', url: '/tinting' },
+    {
+      id: 4,
+      name: 'Paint Protection Film',
+      picture: '/ppf.jpg',
+      url: '/ppf',
+    },
+    {
+      id: 2,
+      name: 'Ceramic Coating',
+      picture: '/ceramic.jpg',
+      url: '/ceramiccoating',
+    },
+    {
+      id: 5,
+      name: 'Paint Correction',
+      picture: '/Muscle.jpg',
+      url: '/paintcorrection',
+    },
   ]);
   return (
     <div className={styles.selectionContainer}>
@@ -21,7 +38,7 @@ function Selection({ setPage }) {
         {selectionList.map((item) => (
           <div
             key={item.id}
-            onClick={() => setPage(item.id)}
+            onClick={() => router.push(item.url)}
             className={styles.selectionItem}
           >
             <img className={styles.thumbnail} src={item.picture} alt='item' />
